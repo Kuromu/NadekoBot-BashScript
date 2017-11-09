@@ -55,7 +55,7 @@ export OS ARCH VER BITS
 if [ "$BITS" = 32 ]; then
 	echo -e "Your system architecture is $ARCH which is unsupported to run Microsoft .NET Core SDK. \nYour OS: $OS \nOS Version: $VER"
 	echo
-	printf "\e[1;31mPlease check the NadekoBot self-hosting guide for alternatives.\e[0m\n"
+	printf "\e[1;31mPlease check the WOG Bot self-hosting guide for alternatives.\e[0m\n"
 	rm nadekoautoinstaller.sh
 	exit 1
 fi
@@ -91,30 +91,30 @@ fi
 
 if [ "$supported" = 0 ]; then
 	echo -e "Your OS $OS $VER $ARCH looks unsupported to run Microsoft .NET Core. \nExiting..."
-	printf "\e[1;31mContact NadekoBot's support on Discord with screenshot.\e[0m\n"
+	printf "\e[1;31mContact WOG Bot's support on Discord with screenshot.\e[0m\n"
 	rm nadekoautoinstaller.sh
 	exit 1
 fi
 
 if [ "$OS" = "Linux" ]; then
-	echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact NadekoBot's support on Discord with screenshot."
+	echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact WOG Bot's support on Discord with screenshot."
 	rm nadekoautoinstaller.sh
 	exit 1
 fi
 
-echo -e "Welcome to NadekoBot Auto Prerequisites Installer. \nWould you like to continue? \nYour OS: $OS \nOS Version: $VER \nArchitecture: $ARCH"
+echo -e "Welcome to WOG Bot Auto Prerequisites Installer. \nWould you like to continue? \nYour OS: $OS \nOS Version: $VER \nArchitecture: $ARCH"
 
 while true; do
     read -p "[y/n]: " yn
     case $yn in
-        [Yy]* ) clear; echo Running NadekoBot Auto-Installer; sleep 2; break;;
+        [Yy]* ) clear; echo Running WOG Bot Auto-Installer; sleep 2; break;;
         [Nn]* ) echo Quitting...; rm nadekoautoinstaller.sh && exit;;
         * ) echo "Couldn't get that please type [y] for Yes or [n] for No.";;
     esac
 done
 
 if [ "$OS" = "Ubuntu" ]; then
-echo "This installer will download all of the required packages for NadekoBot. It will use about 350MB of space. This might take awhile to download if you do not have a good internet connection."
+echo "This installer will download all of the required packages for WOG Bot. It will use about 350MB of space. This might take awhile to download if you do not have a good internet connection."
 echo ""
 read -n 1 -s -p "Press any key to continue..."
 	if [ "$VER" = "14.04" ]; then
@@ -240,7 +240,7 @@ elif [ "$OS" = "Debian" ]; then
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		sudo chmod a+rx /usr/local/bin/youtube-dl
 	else
-		echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact NadekoBot's support on Discord with screenshot."
+		echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact WOG Bot's support on Discord with screenshot."
 		rm nadekoautoinstaller.sh
 		exit 1
 	fi
@@ -316,7 +316,7 @@ elif [ "$OS" = "CentOS" ]; then
 		sudo yum install libunwind libicu -y
 		sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 		sudo sh -c 'echo -e "[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl=https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/dotnetdev.repo'
-		
+
 		yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm epel-release
 		sudo yum install git opus opus-devel ffmpeg tmux yum-utils -y
 		sudo yum -y groupinstall development
@@ -329,14 +329,14 @@ elif [ "$OS" = "CentOS" ]; then
 		wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		chmod a+rx /usr/local/bin/youtube-dl
 	else
-		echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact NadekoBot's support on Discord with screenshot."
+		echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact WOG Bot's support on Discord with screenshot."
 		rm nadekoautoinstaller.sh
 		exit 1
 	fi
 fi
 
 echo
-echo "NadekoBot Prerequisites Installation completed..."
+echo "WOG Bot Prerequisites Installation completed..."
 read -n 1 -s -p "Press any key to continue..."
 sleep 2
 

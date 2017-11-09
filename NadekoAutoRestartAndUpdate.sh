@@ -1,15 +1,15 @@
 #!/bin/sh
 echo ""
-echo "Welcome to NadekoBot Auto Restart and Update!"
+echo "Welcome to WOG Bot Auto Restart and Update!"
 echo ""
 root=$(pwd)
 
 
 choice=4
-	echo "1. Run Auto Restart normally without updating NadekoBot."
-	echo "2. Run Auto Restart and update NadekoBot."
+	echo "1. Run Auto Restart normally without updating WOG Bot."
+	echo "2. Run Auto Restart and update WOG Bot."
 	echo "3. Exit"
-	echo -n "Choose [1] to Run NadekoBot with auto restart on "die" command without updating itself, [2] to Run with Auto Updating on restart after using "die" command."
+	echo -n "Choose [1] to Run WOG Bot with auto restart on "die" command without updating itself, [2] to Run with Auto Updating on restart after using "die" command."
 while [ $choice -eq 4 ]; do
 read choice
 if [ $choice -eq 1 ] ; then
@@ -27,13 +27,13 @@ else
 				exit 0
 			else
 				clear
-				echo "1. Auto Restart normally without updating NadekoBot."
-				echo "2. Auto Restart and update NadekoBot."
+				echo "1. Auto Restart normally without updating WOG Bot."
+				echo "2. Auto Restart and update WOG Bot."
 				echo "3. Exit"
-				echo -n "Choose [1] to Run NadekoBot with auto restart on "die" command without updating itself, [2] to Run with Auto Updating on restart after using "die" command."
+				echo -n "Choose [1] to Run WOG Bot with auto restart on "die" command without updating itself, [2] to Run with Auto Updating on restart after using "die" command."
 				choice=4
 			fi
-		
+
 	fi
 fi
 done

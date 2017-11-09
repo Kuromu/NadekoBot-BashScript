@@ -1,6 +1,6 @@
 #!/bin/sh
 echo ""
-echo "Running NadekoBot with auto restart normally! (without updating)"
+echo "Running WOG Bot with auto restart normally! (without updating)"
 root=$(pwd)
 youtube-dl -U
 

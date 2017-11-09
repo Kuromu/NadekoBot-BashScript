@@ -37,7 +37,7 @@ echo ""
 echo "WOG Bot downloaded."
 
 echo ""
-echo "Downloading Nadeko dependencies"
+echo "Downloading WOG Bot dependencies"
 cd "$root/$tempdir/NadekoBot"
 dotnet restore
 echo ""
