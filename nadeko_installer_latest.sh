@@ -1,13 +1,13 @@
 #!/bin/sh
 echo ""
-echo "NadekoBot Installer started."
+echo "WOG Bot Installer started."
 
 if hash git 1>/dev/null 2>&1
 then
     echo ""
     echo "Git Installed."
 else
-    echo ""    
+    echo ""
     echo "Git is not installed. Please install Git."
     exit 1
 fi
@@ -31,10 +31,10 @@ mkdir "$tempdir"
 cd "$tempdir"
 
 echo ""
-echo "Downloading NadekoBot, please wait."
-git clone -b 1.9 --recursive --depth 1 https://github.com/Kwoth/NadekoBot.git
+echo "Downloading WOG Bot, please wait."
+git clone -b wogbot --recursive --depth 1 https://github.com/Kuromu/NadekoBot.git
 echo ""
-echo "NadekoBot downloaded."
+echo "WOG Bot downloaded."
 
 echo ""
 echo "Downloading Nadeko dependencies"
@@ -44,7 +44,7 @@ echo ""
 echo "Download done"
 
 echo ""
-echo "Building NadekoBot"
+echo "Building WOG Bot"
 dotnet build --configuration Release
 echo ""
 echo "Building done. Moving Nadeko"
