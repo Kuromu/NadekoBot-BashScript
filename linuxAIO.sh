@@ -5,8 +5,8 @@ root=$(pwd)
 echo ""
 choice=7
 	echo "1. Download WOG Bot"
-	echo "2. Run Nadeko (Normally)"
-	echo "3. Run Nadeko with Auto Restart"
+	echo "2. Run WOG Bot (Normally)"
+	echo "3. Run WOG Bot with Auto Restart"
 	echo "4. Auto-Install Prerequisites (For Ubuntu, Debian and CentOS)"
 	echo "5. Set up credentials.json (If you have downloaded WOG Bot already)"
 	echo "6. Exit"
@@ -23,7 +23,7 @@ if [ $choice -eq 1 ] ; then
 else
 		if [ $choice -eq 2 ] ; then
 			echo ""
-			echo "Running Nadeko Normally, if you are running this to check Nadeko, use .die command on discord to stop Nadeko."
+			echo "Running WOG Bot Normally, if you are running this to check WOG Bot, use .die command on discord to stop WOG Bot."
 			wget -N https://github.com/Kuromu/NadekoBot-BashScript/raw/wogbot/nadeko_run.sh && bash "$root/nadeko_run.sh"
 			echo ""
 			echo "Welcome back to WOG Bot."
@@ -32,7 +32,7 @@ else
 		else
 			if [ $choice -eq 3 ] ; then
 				echo ""
-				echo "Running Nadeko with Auto Restart you will have to close the session to stop the auto restart."
+				echo "Running WOG Bot with Auto Restart you will have to close the session to stop the auto restart."
 				sleep 5s
 				wget -N https://github.com/Kuromu/NadekoBot-BashScript/raw/wogbot/NadekoAutoRestartAndUpdate.sh && bash "$root/NadekoAutoRestartAndUpdate.sh"
 				echo ""
@@ -149,8 +149,8 @@ bash "$root/linuxAIO.sh"
 						else
 							clear
 							echo "1. Download WOG Bot"
-							echo "2. Run Nadeko (Normally)"
-							echo "3. Run Nadeko with Auto Restart"
+							echo "2. Run WOG Bot (Normally)"
+							echo "3. Run WOG Bot with Auto Restart"
 							echo "4. Auto-Install Prerequisites (For Ubuntu, Debian and CentOS)"
 							echo "5. Set up credentials.json (If you have downloaded WOG Bot already)"
 							echo "6. Exit"
