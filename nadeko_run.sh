@@ -1,6 +1,6 @@
 #!/bin/sh
 echo ""
-echo "WOG BOT 1.9+"
+echo "WOG Bot 1.9+"
 echo "Forked from NadekoBot 1.9+"
 echo "Mirai was here."
 root=$(pwd)

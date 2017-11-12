@@ -47,7 +47,7 @@ echo ""
 echo "Building WOG Bot"
 dotnet build --configuration Release
 echo ""
-echo "Building done. Moving Nadeko"
+echo "Building done. Moving WOG Bot"
 
 cd "$root"
 
