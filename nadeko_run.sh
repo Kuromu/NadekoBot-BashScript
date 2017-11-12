@@ -1,6 +1,7 @@
 #!/bin/sh
 echo ""
-echo "NadekoBot 1.9+"
+echo "Chrome 1.9+"
+echo "Forked from NadekoBot 1.9+"
 echo "Mirai was here."
 root=$(pwd)
 youtube-dl -U
@@ -16,7 +17,7 @@ cd "$root/NadekoBot"
 dotnet restore
 dotnet build --configuration Release
 cd "$root/NadekoBot/src/NadekoBot"
-echo "Running NadekoBot. Please wait."
+echo "Running Chrome. Please wait."
 dotnet run --configuration Release
 echo "Done"
 
