@@ -1,13 +1,13 @@
 #!/bin/sh
 echo ""
-echo "NadekoBot Installer started."
+echo "TwinBot Installer started."
 
 if hash git 1>/dev/null 2>&1
 then
     echo ""
     echo "Git Installed."
 else
-    echo ""    
+    echo ""
     echo "Git is not installed. Please install Git."
     exit 1
 fi
@@ -31,23 +31,23 @@ mkdir "$tempdir"
 cd "$tempdir"
 
 echo ""
-echo "Downloading NadekoBot, please wait."
-git clone -b 1.9 --recursive --depth 1 https://github.com/Kwoth/NadekoBot.git
+echo "Downloading TwinBot, please wait."
+git clone -b twinbot --recursive --depth 1 https://github.com/Kuromu/NadekoBot.git
 echo ""
-echo "NadekoBot downloaded."
+echo "TwinBot downloaded."
 
 echo ""
-echo "Downloading Nadeko dependencies"
+echo "Downloading TwinBot dependencies"
 cd "$root/$tempdir/NadekoBot"
 dotnet restore
 echo ""
 echo "Download done"
 
 echo ""
-echo "Building NadekoBot"
+echo "Building TwinBot"
 dotnet build --configuration Release
 echo ""
-echo "Building done. Moving Nadeko"
+echo "Building done. Moving TwinBot"
 
 cd "$root"
 

@@ -1,6 +1,7 @@
 #!/bin/sh
 echo ""
-echo "NadekoBot 1.9+"
+echo "TwinBot"
+echo "Forked from NadekoBot 1.9+"
 echo "Mirai was here."
 root=$(pwd)
 youtube-dl -U
